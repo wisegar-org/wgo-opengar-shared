@@ -1,19 +1,26 @@
-//  ############################ //
-//  ###### SHARED EXPORTS ###### //
 /**
- * @module Shared
+ * @module Interfaces
  */
-export * from './errors/AuthError';
 export * from './interfaces/IApiResponse';
 export * from './interfaces/IJwtSettings';
 export * from './interfaces/IUser';
 export * from './interfaces/IUserRole';
-export * from './utils/Runner';
+export * from './interfaces/IApiSettings';
+
+/**
+ * @module Errors
+ */
+
+export * from './errors/AuthError';
 
 /**
  * @module Shared - Models
  */
 export * from './models/TokenResult';
+export * from './models/AuthModels';
+export * from './models/EmailOptions';
+export * from './models/responses/Response';
+export * from './models/responses/MediaResponse';
 export * from './models/enums/MediaEntityTypeEnum';
 export * from './models/enums/RolEntityEnum';
 
@@ -27,3 +34,4 @@ export * from './services/ServiceProvider';
  * @module Shared  Utilities
  */
 export * from './utils/ObjExt';
+export * from './utils/Runner';
