@@ -1,1 +1,1 @@
-# wgo-shared
+# wgo-opengar-shared
