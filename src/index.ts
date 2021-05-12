@@ -10,7 +10,6 @@ export * from './interfaces/IApiSettings';
 /**
  * @module Errors
  */
-
 export * from './errors/AuthError';
 
 /**
@@ -20,14 +19,12 @@ export * from './models/TokenResult';
 export * from './models/AuthModels';
 export * from './models/EmailOptions';
 export * from './models/responses/Response';
-export * from './models/responses/MediaResponse';
 export * from './models/enums/MediaEntityTypeEnum';
 export * from './models/enums/RolEntityEnum';
 
 /**
  * @module Shared Services
  */
-
 export * from './services/ServiceProvider';
 
 /**
