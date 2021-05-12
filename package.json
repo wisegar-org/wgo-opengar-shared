@@ -1,8 +1,8 @@
 {
   "name": "@wisegar-org/wgo-opengar-shared",
-  "version": "0.0.1-build.3",
+  "version": "0.0.1-build.4",
   "description": "OpenGar Core Shared Library - Dev",
-  "main": "build/src/index.js",
+  "main": "build/index.js",
   "scripts": {
     "start": "nodemon",
     "build": "npx rimraf build && tsc",
