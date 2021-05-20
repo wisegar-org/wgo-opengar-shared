@@ -1,3 +1,5 @@
 export enum MediaEntityTypeEnum {
-    image = 1
+  image = 'image',
+  document = 'document',
+  file = 'file',
 }
