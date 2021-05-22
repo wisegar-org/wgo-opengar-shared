@@ -21,6 +21,7 @@ export * from './models/EmailOptions';
 export * from './models/responses/Response';
 export * from './models/enums/MediaEntityTypeEnum';
 export * from './models/enums/RolEntityEnum';
+export * from './models/enums/Language';
 
 /**
  * @module Shared Services
