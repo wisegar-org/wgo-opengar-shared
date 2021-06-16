@@ -22,6 +22,7 @@ export * from './models/responses/Response';
 export * from './models/enums/MediaEntityTypeEnum';
 export * from './models/enums/RolEntityEnum';
 export * from './models/enums/Language';
+export * from './models/enums/FrequencyRepeatEnum';
 
 /**
  * @module Shared Services
