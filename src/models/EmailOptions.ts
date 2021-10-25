@@ -4,13 +4,15 @@ export class EmailOptions {
   from?: string;
   text?: string;
   html?: string;
+  bcc?: string;
+  envelope?: {
+    to: string;
+    from: string;
+  };
 }
 
 export interface IEmailNotify {
-  emailOptions: {
-    to: string;
-    subject: string;
-  };
+  emailOptions: EmailOptions;
   bodyTemplate: {
     //Body message or Handlebars template
     template: string;
