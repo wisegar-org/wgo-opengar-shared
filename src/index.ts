@@ -34,3 +34,5 @@ export * from './services/ServiceProvider';
  */
 export * from './utils/ObjExt';
 export * from './utils/Runner';
+export * from './utils/ObjectExtensions';
+export * from './utils/ObjectMapper';
