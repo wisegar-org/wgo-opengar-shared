@@ -1,6 +1,6 @@
 {
   "name": "@wisegar-org/wgo-opengar-shared",
-  "version": "0.0.1-build.12",
+  "version": "0.0.1-build.13",
   "description": "OpenGar Core Shared Library",
   "main": "build/index.js",
   "scripts": {
