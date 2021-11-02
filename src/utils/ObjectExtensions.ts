@@ -64,7 +64,7 @@ export const SubString = (str: string, max: number) => {
   return str.slice(0, max);
 };
 export const IsOnline = () => {
-  return navigator?.onLine;
+  return !IsNullOrUndefined(navigator) && navigator.onLine;
 };
 
 export const StableSort = (array: any[], cmp: (arg0: any, arg1: any) => any) => {
@@ -152,7 +152,7 @@ export function getAsKeyOf<T>(key: string, instance: T): keyof T {
  */
 export class ValidationError extends Error {
   public data: ValidationError[];
-  constructor(message, data) {
+  constructor(message: string, data: ValidationError[]) {
     super(message);
     this.data = data;
   }
