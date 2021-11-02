@@ -1,5 +1,3 @@
-import * as dns from 'dns';
-
 export const IsFuncAndDefined = (object: any) => {
   return !IsNullOrUndefined(object) && typeof object === 'function';
 };
@@ -159,30 +157,4 @@ export class ValidationError extends Error {
 }
 export const stringToBoolean = (strObj: string): boolean => {
   return IsStringEmptyNullOrUndefined(strObj) ? false : strObj === '1';
-};
-
-/**
- * @deprecated Utilizzare i validatori della libreria class-validator (@IsEmail())
- * @function EmailValidation Permette la validazione di una striga che rappresenta un indirizzo email
- */
-export const EmailValidation = (email: string): Promise<void> => {
-  return new Promise((resolve, reject) => {
-    if (IsStringEmptyNullOrUndefined(email)) {
-      reject('The email is required');
-    }
-    const predomain = email.split('@')[0];
-    if (IsStringEmptyNullOrUndefined(predomain)) {
-      reject('The email is required');
-    }
-
-    let mxDomain = email.split('@')[1];
-    if (IsStringEmptyNullOrUndefined(mxDomain)) {
-      reject('The domain is required');
-    }
-
-    dns.resolveMx(mxDomain, async (err, adresses) => {
-      if (err) reject(err);
-      resolve();
-    });
-  });
 };
