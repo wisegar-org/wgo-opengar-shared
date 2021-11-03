@@ -1,3 +1,4 @@
+import { ReadStream } from 'fs-extra';
 export class EmailOptions {
   subject: string;
   to: string;
@@ -8,6 +9,10 @@ export class EmailOptions {
   envelope?: {
     to: string;
     from: string;
+  };
+  attachments?: {
+    filename: string;
+    content: ReadStream;
   };
 }
 
