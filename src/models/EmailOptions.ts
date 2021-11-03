@@ -13,7 +13,7 @@ export class EmailOptions {
   attachments?: {
     filename: string;
     content: ReadStream;
-  };
+  }[];
 }
 
 export interface IEmailNotify {
