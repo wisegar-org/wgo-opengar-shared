@@ -1,4 +1,5 @@
-import { ReadStream } from 'fs-extra';
+import { Readable } from 'stream';
+import { Url } from 'url';
 export class EmailOptions {
   subject: string;
   to: string;
@@ -11,8 +12,10 @@ export class EmailOptions {
     from: string;
   };
   attachments?: {
-    filename: string;
-    content: ReadStream;
+    filename?: string;
+    content?: string | Buffer | Readable;
+    path?: string | Url;
+    encoding?: string;
   }[];
 }
 
