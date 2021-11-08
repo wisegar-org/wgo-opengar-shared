@@ -34,6 +34,6 @@ export * from './services/ServiceProvider';
  */
 export * from './utils/ObjExt';
 export * from './utils/Runner';
-// This code is in openar-core
-// export * from './utils/ObjectExtensions';
-// export * from './utils/ObjectMapper';
+export * from './utils/ObjectExtensions';
+export * from './utils/ObjectMapper';
+export * from './utils/DateExtensions';
