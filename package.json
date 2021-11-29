@@ -36,6 +36,7 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
+    "@wgo-org/wgo-object-extensions": "0.0.1-build.4",
     "moment": "^2.29.1"
   }
 }
