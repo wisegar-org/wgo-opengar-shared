@@ -1,4 +1,4 @@
 export enum RolEntityEnum {
-  superAdmin = "superAdmin",
-  customer = "customer",
+  admin = 'admin',
+  user = 'user',
 }
