@@ -1,1 +1,1 @@
-export * from '@wgo-org/wgo-object-extensions';
+export * from '@wisegar-org/wgo-object-extensions';
