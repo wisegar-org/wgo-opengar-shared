@@ -36,7 +36,6 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
-    "@wisegar-org/wgo-object-extensions": "0.0.1-build.7",
     "moment": "^2.29.1"
   }
 }
