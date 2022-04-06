@@ -28,8 +28,3 @@ export * from './models/enums/FrequencyRepeatEnum';
  * @module Shared Services
  */
 export * from './services/ServiceProvider';
-
-/**
- * @module Shared  Utilities
- */
-export * from './utils';
