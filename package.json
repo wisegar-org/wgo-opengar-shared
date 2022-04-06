@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon",
     "build": "npx rimraf build && tsc",
-    "publicate": "npx rimraf build && tsc && npm publish",
+    "promote": "npm run build && npm version prerelease && npm publish",
     "test": "jest --detectOpenHandles"
   },
   "repository": {
